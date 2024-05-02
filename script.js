@@ -1,4 +1,3 @@
-//
 const menuIcon = document.querySelector(".mobile-menu");
 const menuList = document.querySelector(".list-menu");
 const hamburgerIcon = document.querySelector(".fa");
