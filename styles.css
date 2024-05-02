@@ -1,0 +1,117 @@
+:root {
+  --primary: #050505;
+  --secondary: #46292c;
+  --white: #fff;
+  --gray: #f2f2f2;
+  --max-width: 80%;
+  --semibold: 600;
+  --medium: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  line-height: 1.1em;
+  font-size: 3.2rem;
+  font-weight: var(--semibold);
+  margin: 1.5rem 0;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: var(--medium);
+}
+
+a:hover {
+  color: var(--gray);
+}
+
+.button {
+  color: var(--primary);
+  background-color: var(--white);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: var(--medium);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+/* HEADER */
+
+header {
+  height: 100px;
+  display: flex;
+  margin: 0 auto -100px auto;
+  max-width: var(--max-width);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu i {
+  color: var(--white);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.list-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+.list-menu a {
+  text-transform: uppercase;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  background-image: url(./img/bg-1.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 20rem;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}

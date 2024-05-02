@@ -1,0 +1,35 @@
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  nav .mobile-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .list-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    left: 0;
+    background-color: rgba(58, 28, 31, 0.94);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 4rem;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .list-menu {
+    display: flex !important;
+  }
+}
